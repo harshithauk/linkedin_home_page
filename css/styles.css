@@ -17,18 +17,6 @@ body{
 	margin-top: 6px;
 }
 
-@media only screen and (max-width:400px) {
-
-  .head{
-    height:92px;
-    width: 100%;
-  }
-
-  .search1{
-    height: 38px;
-  }
-}
-
 .icon1{
   margin-left: 19%;
   margin-top: 5px;
@@ -44,6 +32,12 @@ body{
 .icon{
   margin-right: 5%;
 }
+.user_img{
+  position: absolute;
+  margin-top: 7px;
+}
+
+
 .fa-home{
   padding-left: 8%;
 }
@@ -60,10 +54,7 @@ body{
 
 }
 
-.user_img{
-  position: absolute;
-  margin-top: 7px;
-}
+
 .icon2{
   margin-left: 90px;
   margin-top: 5px;
@@ -82,6 +73,29 @@ body{
 .link: hover {
   color: #fff;
 }
+@media only screen and (max-width:400px) {
+
+  .head{
+    height:60px;
+    width: 360px;
+  }
+  .search1{
+    height: 32px;
+  }
+  .icon,.icon2,.link{
+    display: none;
+    visibility: hidden;
+  }
+  .icon1{
+    margin-left: 5%;
+  }
+  .user_img{
+    margin-top: -40px;
+    margin-left: 110px;
+  }
+
+
+}
 
 /* end of header section */
 
@@ -92,6 +106,7 @@ body{
   z-index: auto;
   padding-top: 10px;
 }
+
 .join_now{
   width: 500px;
   height: 440px;
@@ -172,14 +187,12 @@ hr.hrline{
   font-weight: 200;
 }
 .info1{
-
   text-decoration:none;
   color: grey;
 }
 a.info1: hover {
   color: black;
 }
-
 
 .post_img{
   width: 100%;
@@ -209,7 +222,6 @@ a.info1: hover {
     float: right;
 }
 
-
 .user_img1{
   float: left;
   font-size:44px;
@@ -218,4 +230,35 @@ a.info1: hover {
 .ellipsis_icon1{
   margin-right: -10px;
   margin-left: 200px;
+}
+@media only screen and (max-width:400px) {
+
+  h5,h4{
+    font-size: 13px;
+  }
+
+  .join_now,.card{
+    width:340px;
+    height: 480px;
+    margin-left: 10px;
+
+  }
+  .post_img{
+    height: 240px;
+  }
+  .join_next{
+    height: 260px;
+  }
+
+  .follow{
+    margin-left: 60px;
+  }
+  .ic1{
+    margin-left: 20px;
+  }
+  .comp_name{
+    width: 65%;
+    display: inline;
+  }
+
 }
